@@ -1,12 +1,12 @@
-# Print 1 to N Using Head Recursion 
-def func(x,N):
-    if x == N+1 :
+# Print 1 to N Using Head Recursion
+def func(x, N):
+    if x == N + 1:
         return
     print(x)
-    func(x+1,N)
-    
-    
-'''dry run
+    func(x + 1, N)
+
+
+"""dry run
 
 def func(1,4):
     if 1 == 4+1 :
@@ -35,38 +35,42 @@ def func(5,4):
     if 5 == 4+1 :
         return
     print(x)
-    func(x+1,N)'''
-    
+    func(x+1,N)"""
+func(1, 4)
+
+
 # Tail Recursion Backtracking
 def func(N):
-    if N>0 :
+    if N <= 0:
         return
-    func(N-1)
+    func(N - 1)
     print(N)
-'''dry run
+
+
+"""dry run
 def func(4):
-    if 4>0 :
+    if 4<0 :
         return
     func(3)
     print(4)
 def func(3):
-    if 3>0 :
+    if 3<0 :
         return
     func(2)
     print(3)
 def func(2):
-    if 2>0 :
+    if 2<0 :
         return
     func(1)
     print(2)
 def func(1):
-    if 1>0 :
+    if 1<0 :
         return
     func(0)
     print(1)
 def func(0):
-    if 0>0 :
+    if 0<0 :
         return
     func(-1)
-    print(0)''''''
-    
+    print(0)"""
+func(4)
